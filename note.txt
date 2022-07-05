@@ -1,0 +1,9 @@
+Machine language is the low level programming language. Machine language can only be represented by 0s and 1s. In earlier when we have to create a picture or show data on the screen of the computer then it is very difficult to draw using only binary digits(0s and 1s). (computer er kasa kasi language gulo k bole mechine language.)
+
+Assembly language is the more than low level and less than high-level language so it is intermediary language. Assembly languages use numbers, symbols, and abbreviations instead of 0s and 1s.For example: For addition, subtraction and multiplications it uses symbols likes Add, sub and Mul, etc.
+
+A compiled language is a programming language whose implementations are typically compilers and not interpreters. An interpreted language is a programming language whose implementations execute instructions directly and freely, without previously compiling a program into machine-language instructions.
+
+DOM hocchy - javascript diye HTML k access korar ekta system.
+
+24-4: document.getElementsByTagName('TagName')

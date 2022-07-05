@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* #second-title{
+            background-color: rgba(210, 105, 30, 0.178);
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog website</h1>
+    </header>
+    <main> 
+        <section>
+            <article>
+                <h3>My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit optio, hic culpa alias tenetur quas ipsam! Fuga facere repellat corrupti vitae impedit ipsam adipisci, suscipit modi molestias perferendis odio?</p>
+            </article>
+            <article>
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Magnam delectus totam quia ab neque quos similique nihil id necessitatibus eaque natus dignissimos, accusantium eos eligendi provident recusandae aspernatur praesentium odit nobis ducimus nostrum, in quam! Sed, animi pariatur.</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-3</h3>
+                <p>Deserunt temporibus recusandae officiis? Itaque asperiores voluptates tempore atque inventore. In, ipsa libero neque ducimus perferendis voluptatem voluptate et molestiae nostrum voluptates aperiam? Inventore iure consequuntur minus adipisci reprehenderit eius!</p>
+            </article>
+        </section>
+        <!-- 24-3   -->
+    </main>
+    <script>
+        console.log(document.body);
+        //Module: 24-3   
+        const blogTitles = document.getElementsByTagName('h3');
+        for(const h3 of blogTitles){
+            // console.log(h3.innerText);
+        }
+        const blogDetails = document.getElementsByTagName('p');
+        for(const p of blogDetails){
+            // console.log(p.innerText);
+        }
+    </script>
+
+
+<script>
+    // 24-5 Capture and change Element by using getElementById (css changing by using js)
+
+
+</script>
+</body>
+</html>
