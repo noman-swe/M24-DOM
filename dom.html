@@ -26,7 +26,7 @@
                 <p>Magnam delectus totam quia ab neque quos similique nihil id necessitatibus eaque natus dignissimos, accusantium eos eligendi provident recusandae aspernatur praesentium odit nobis ducimus nostrum, in quam! Sed, animi pariatur.</p>
             </article>
             <article>
-                <h3>My Awesome Blog-3</h3>
+                <h3 id="third-title">My Awesome Blog-3</h3>
                 <p>Deserunt temporibus recusandae officiis? Itaque asperiores voluptates tempore atque inventore. In, ipsa libero neque ducimus perferendis voluptatem voluptate et molestiae nostrum voluptates aperiam? Inventore iure consequuntur minus adipisci reprehenderit eius!</p>
             </article>
         </section>
@@ -47,8 +47,15 @@
 
 
 <script>
-    // 24-5 Capture and change Element by using getElementById (css changing by using js)
-
+    // 24-5 Capture and change Element by using getElementById (css changing by using js
+    const secondTitle = document.getElementById('second-title');
+        secondTitle.style.backgroundColor = 'yellow';
+        secondTitle.style.textAlign = 'center';
+    const thirdTile = document.getElementById('third-title');
+        thirdTile.style.fontSize = '40px';
+        thirdTile.innerText = 'Title updated by JS';
+        thirdTile.style.backgroundColor = 'salmon';
+        thirdTile.style.padding = '10px';
 
 </script>
 </body>
