@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +10,47 @@
         /* #second-title{
             background-color: rgba(210, 105, 30, 0.178);
         } */
+
+        /* m-24-6--
+        .blog {
+            border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        } */
     </style>
+    
 </head>
+
 <body>
     <header>
         <h1>Welcome to my blog website</h1>
     </header>
-    <main> 
+    <main>
         <section>
-            <article>
+            <article class="blog">
                 <h3>My Awesome Blog-1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit optio, hic culpa alias tenetur quas ipsam! Fuga facere repellat corrupti vitae impedit ipsam adipisci, suscipit modi molestias perferendis odio?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit optio, hic culpa alias tenetur quas
+                    ipsam! Fuga facere repellat corrupti vitae impedit ipsam adipisci, suscipit modi molestias
+                    perferendis odio?</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="second-title">My Awesome Blog-2</h3>
-                <p>Magnam delectus totam quia ab neque quos similique nihil id necessitatibus eaque natus dignissimos, accusantium eos eligendi provident recusandae aspernatur praesentium odit nobis ducimus nostrum, in quam! Sed, animi pariatur.</p>
+                <p>Magnam delectus totam quia ab neque quos similique nihil id necessitatibus eaque natus dignissimos,
+                    accusantium eos eligendi provident recusandae aspernatur praesentium odit nobis ducimus nostrum, in
+                    quam! Sed, animi pariatur.</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="third-title">My Awesome Blog-3</h3>
-                <p>Deserunt temporibus recusandae officiis? Itaque asperiores voluptates tempore atque inventore. In, ipsa libero neque ducimus perferendis voluptatem voluptate et molestiae nostrum voluptates aperiam? Inventore iure consequuntur minus adipisci reprehenderit eius!</p>
+                <p>Deserunt temporibus recusandae officiis? Itaque asperiores voluptates tempore atque inventore. In,
+                    ipsa libero neque ducimus perferendis voluptatem voluptate et molestiae nostrum voluptates aperiam?
+                    Inventore iure consequuntur minus adipisci reprehenderit eius!</p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth-title">My Awesome Blog-4</h3>
+                <p>Alasfsahf temporibus recusandae officiis? Itaque asperiores voluptates tempore atque inventore. In,
+                    ipsa libero neque ducimus perferendis voluptatem voluptate et molestiae nostrum voluptates aperiam?
+                    Inventore iure consequuntur minus adipisci reprehenderit eius!</p>
             </article>
         </section>
         <!-- 24-3   -->
@@ -36,27 +59,42 @@
         console.log(document.body);
         //Module: 24-3   
         const blogTitles = document.getElementsByTagName('h3');
-        for(const h3 of blogTitles){
+        for (const h3 of blogTitles) {
             // console.log(h3.innerText);
         }
         const blogDetails = document.getElementsByTagName('p');
-        for(const p of blogDetails){
+        for (const p of blogDetails) {
             // console.log(p.innerText);
         }
     </script>
 
 
-<script>
-    // 24-5 Capture and change Element by using getElementById (css changing by using js
-    const secondTitle = document.getElementById('second-title');
+    <script>
+        // exploring getElementById [24-5 Capture and change Element by using  (css changing by using js
+        const secondTitle = document.getElementById('second-title');
         secondTitle.style.backgroundColor = 'yellow';
         secondTitle.style.textAlign = 'center';
-    const thirdTile = document.getElementById('third-title');
+        const thirdTile = document.getElementById('third-title');
         thirdTile.style.fontSize = '40px';
         thirdTile.innerText = 'Title updated by JS';
         thirdTile.style.backgroundColor = 'salmon';
         thirdTile.style.padding = '10px';
 
-</script>
+    </script>
+
+    <script>
+        // exploring getELementByClassName Module:24-6
+         const blogs = document.getElementsByClassName('blog');
+         for(const blog of blogs){
+            console.log(blog);
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+
+            // document.querySelector() & document.querySelectorAll()
+         }
+    </script>
 </body>
+
 </html>
