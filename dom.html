@@ -19,15 +19,23 @@
             border-radius: 10px;
         } */
     </style>
-    
+
 </head>
 
 <body>
     <header>
         <h1>Welcome to my blog website</h1>
+
+        <ul id="blog-list">
+            <!-- document.createElement('p') diye js e html element kora jay -->
+            <li>blog-1</li>
+            <li>blog-2</li>
+            <li>blog-3</li>
+            <li>blog-4</li>
+        </ul>
     </header>
     <main>
-        <section>
+        <section id="blogs">
             <article class="blog">
                 <h3>My Awesome Blog-1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit optio, hic culpa alias tenetur quas
@@ -83,9 +91,42 @@
     </script>
 
     <script>
+        // 24-8 Create HTML elements using Javascript and appendChild
+        // create and add HTML element by using JS
+        const li = document.createElement('li');
+        li.innerText = 'blog-5';
+        //where to add?
+        const ul = document.getElementById('blog-list');
+        //append new element
+        ul.appendChild(li);
+
+
+        // add article
+        const article = document.createElement('article');
+        article.classList.add('blog');
+        // const h3 = document.createElement('h3');
+        // h3.innerText = 'My Awesome Blogs - 5';
+        // const p = document.createElement('p');
+        // p.innerText = 'NodeList, htmlcollection, setAttribute, parentNode, childnodesNodeList, htmlcollection, setAttribute, parentNode, childnodesNodeList, htmlcollection, setAttribute, parentNode, childnodes!';
+        // article.appendChild(h3);
+        // article.appendChild(p);
+
+        // another way by using caret ``
+        article.innerHTML = `
+            <h3>My Awesome Blog-5</h3>
+            <p>NodeList, htmlcollection, setAttribute, parentNode, childnodesNodeList, htmlcollection, setAttribute, parentNode, childnodesNodeList, htmlcollection, setAttribute, parentNode, childnodes!</p>
+        
+        `;
+
+        const blogSection = document.getElementById('blogs');
+        blogSection.appendChild(article);
+
+    </script>
+
+    <script>
         // exploring getELementByClassName Module:24-6
-         const blogs = document.getElementsByClassName('blog');
-         for(const blog of blogs){
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
             console.log(blog);
             blog.style.border = '2px solid orange';
             blog.style.borderRadius = '10px';
@@ -93,10 +134,13 @@
             blog.style.padding = '5px';
 
             // document.querySelector() & document.querySelectorAll()
-         }
+        }
 
         //Not clear:  24-7 NodeList, htmlcollection, setAttribute, parentNode, childnodes
     </script>
+
+
+
 </body>
 
 </html>
